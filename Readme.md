@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Рустам Шайхиев](https://up.htmlacademy.ru/htmlcss/27/user/823573).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/stalyer).
 
 ---
 
