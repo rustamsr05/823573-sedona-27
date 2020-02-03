@@ -81,10 +81,8 @@
       <section>
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button>Поиск гостиницы в Седоне</button>
         <form class="user" method="post" action="https://echo.htmlacademy.ru">
-          <h3>
-            <a href="#">Поиск гостиницы в Седоне</a>
-          </h3>
           <p>
             <label for="user-date-in">Дата заезда:</label>
             <input id="user-date-in" type="date" name="date-in" placeholder="24.04.2017">
@@ -95,11 +93,15 @@
           </p>
           <p>
             <label for="user-adult-num">Взрослые:</label>
+            <button>-</button>
             <input id="user-adult-num" type="number" name="adult-num" placeholder="2">
+            <button>+</button>
           </p>
           <p>
             <label for="user-kids-num">Дети:</label>
+            <button>-</button>
             <input id="user-kids-num" type="number" name="kids-num" placeholder="0">
+            <button>+</button>
           </p>
           <button type="submit">Найти</button>
         </form>
