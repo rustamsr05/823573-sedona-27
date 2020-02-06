@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+.main-navigation-menu,
+.advantages-list,
+.advantages-city-list,
+.social-list,
+.result-list {
+  list-style: none;
+}
+
+.main-navigation-menu a {
+  color: #000000;
+}
+
+.main-navigation-menu a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.intro {
+  width: 1200px;
+  height: 773px;
+
+  background-color: gray;
+  background-image: url("../img/background-photo.img");
+}
+
+.advantages h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advantages p {
+  color: #333333;
+  text-align: center;
+}
+
+.advantages-start h3,
+.advantages-start p {
+  line-height: 26px;
+}
+
+.hotel-searching h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.hotel-searching p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: none;
+}
+
+.button-search {
+  font-size: 21px;
+  line-height: 26px;
+
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+}
+
+.button-search:hover,
+.button-book:hover {
+  background-color: #604e43;
+}
+
+.button-search:active,
+.button-book:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.button-minus,
+.button-plus {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+
+.button-find {
+  font-size: 21px;
+  line-height: 26px;
+
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+}
+
+.button-find:hover,
+.button-more:hover {
+  background-color: #669ec0;
+}
+
+.button-find:active,
+.button-more:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.button-more {
+  font-size: 14px;
+  line-height: 21px;
+
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+}
+
+.button-book {
+  font-size: 14px;
+  line-height: 21px;
+
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+}
+
+.result-item a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.result-item a:hover {
+  color: #81b3d2;
+}
+
+.result-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
