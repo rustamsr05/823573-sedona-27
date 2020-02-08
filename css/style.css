@@ -17,6 +17,10 @@ img {
   max-width: 100%;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -57,8 +61,8 @@ img {
   width: 1200px;
   height: 773px;
 
-  background-color: gray;
-  background-image: url("../img/background-photo.img");
+  background-color: #808080;
+  background-image: url("../img/background-photo.jpg");
 }
 
 .advantages h3 {
@@ -182,4 +186,32 @@ img {
 
 .result-item a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.footer-contacts a{
+  color: #000000;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.rating {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: #666666;
+  text-align: center;
+
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
 }
