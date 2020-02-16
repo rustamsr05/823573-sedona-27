@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -52,6 +53,8 @@ img {
 }
 
 .main-navigation-menu a {
+  margin: 0;
+  padding: 0;
   color: #000000;
 }
 
@@ -64,11 +67,10 @@ img {
 }
 
 .intro {
-  width: 1200px;
-  height: 773px;
-
   background-color: #808080;
   background-image: url("../img/background-photo.jpg");
+  margin: 0;
+  padding: 0;
 }
 
 .advantages h3 {
@@ -224,4 +226,176 @@ img {
   width: 110px;
   height: 27px;
   background-color: #f2f2f2;
+}
+
+.main-header {
+  position: relative;
+
+  background-color: #ffffff;
+}
+
+.main-header-logo {
+  position: absolute;
+
+  left: 50%;
+  margin-left: -70px;
+}
+
+.main-navigation-menu {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+
+.button-menu {
+  display: inline-block;
+
+  width: 239px;
+  height: 56px;
+  margin-right: 100px;
+
+  outline: 1px solid tomato;    /*временно для сетки*/
+}
+
+.push {
+  margin-left: auto;            /*не работает!!*/
+}
+
+.intro img {
+  margin-top: 76px;
+  margin-left: 370px;
+  margin-bottom: 22px;
+}
+
+.intro::after {
+  content: url("../img/intro-mask.svg");
+
+  padding: 0;                   /*остается отступ снизу!!!*/
+  margin: 0;
+}
+
+.advantages-start-container {
+  margin: 0;
+  padding: 0;
+
+  outline: 1px solid tomato;    /*временно для сетки*/
+}
+
+.advantages-list {              /*картинка в отдельной строке*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages ol,
+.advantages-item ul,
+.advantages-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.item-label {
+  width: 400px;
+  background-color: #eeeeee;
+  margin: 0;
+  padding-top: 46px;
+  padding-right: 60px;
+  padding-left: 60px;
+  text-align: center;
+}
+
+.advantages-city-list {
+  display: flex;
+}
+
+.advantages-city-list li {
+  width: 400px;
+}
+
+.advantages-city-list .house::before {
+  display: block;
+  content: url("../img/icon-house.svg");
+}
+
+.advantages-city-list .food::before {
+  display: block;
+  content: url("../img/icon-food.svg");
+}
+
+.advantages-city-list .souvenir::before {
+  display: block;
+  content: url("../img/icon-souvenir.svg");
+}
+
+.hotel-searching {
+  text-align: center;
+}
+
+.hotel-searching-form {
+  width: 568px;
+  height: 395px;
+  background-color: #ffffff;
+  outline: 1px solid tomato;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-contacts {
+  width: 223px;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+
+/*hotel*/
+
+.searching-result ul,
+.result-list li {
+  margin: 0;
+}
+
+.result-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  width: 100%;
+}
+
+.hotel-info {
+  margin-left: 30px;
+}
+
+.hotel-rating {
+  margin-left: auto;
 }
