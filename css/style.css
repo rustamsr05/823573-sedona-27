@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   padding: 0;
 
@@ -34,6 +34,12 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-navigation {
@@ -253,13 +259,16 @@ img {
 
   width: 239px;
   height: 56px;
-  margin-right: 100px;
 
   outline: 1px solid tomato;    /*временно для сетки*/
 }
 
-.push {
-  margin-left: auto;            /*не работает!!*/
+a .button-menu {
+  vertical-align: center;
+}
+
+.button-menu-push {
+  margin-left: auto;
 }
 
 .intro img {
@@ -282,11 +291,18 @@ img {
   outline: 1px solid tomato;    /*временно для сетки*/
 }
 
-.advantages-list {              /*картинка в отдельной строке*/
+.advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+}
+
+.advantages-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item img {
+  display: inline-block;
 }
 
 .advantages ol,
@@ -304,6 +320,10 @@ img {
   padding-right: 60px;
   padding-left: 60px;
   text-align: center;
+}
+
+.item-label-blue {
+  background-color: #81b3d2;
 }
 
 .advantages-city-list {
@@ -340,7 +360,7 @@ img {
   outline: 1px solid tomato;
 }
 
-.main-footer {
+.main-footer .container{
   display: flex;
   justify-content: space-around;
   align-items: center;
