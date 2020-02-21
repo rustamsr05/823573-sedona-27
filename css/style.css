@@ -18,6 +18,8 @@ body {
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
 }
 
 a {
@@ -26,6 +28,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -234,10 +237,8 @@ img {
   background-color: #f2f2f2;
 }
 
-.main-header {
+.main-navigation {
   position: relative;
-
-  background-color: #ffffff;
 }
 
 .main-header-logo {
@@ -247,48 +248,73 @@ img {
   margin-left: -70px;
 }
 
-.main-navigation-menu {
-  display: flex;
-
-  margin: 0;
-  padding: 0;
+.menu-container {
+  background-color: #ffffff;
 }
 
-.button-menu {
-  display: inline-block;
+.main-navigation-menu {
+  display: flex;
+  flex-wrap: wrap;
 
-  width: 239px;
+  width: 1056px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  outline: 1px solid blue;
+}
+
+.main-navigation-menu li {
+  width: 240px;
   height: 56px;
+  padding-top: 16px;
 
   outline: 1px solid tomato;    /*временно для сетки*/
 }
 
-a .button-menu {
-  vertical-align: center;
+.menu-item-left {
+  text-align: left;
 }
 
-.button-menu-push {
+.menu-item-right {
+  text-align: right;
+}
+
+.menu-push {
   margin-left: auto;
 }
 
 .intro img {
   margin-top: 76px;
   margin-left: 370px;
-  margin-bottom: 22px;
+  margin-bottom: 81px;
 }
 
-.intro::after {
+.advantages::before {
+  position: absolute;
+  top: 514px;
+
   content: url("../img/intro-mask.svg");
 
-  padding: 0;                   /*остается отступ снизу!!!*/
+  padding: 0;
   margin: 0;
 }
 
 .advantages-start-container {
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 
   outline: 1px solid tomato;    /*временно для сетки*/
+}
+
+.advantages-start-container h3 {
+  padding-top: 59px;
+}
+
+.advantages-start-container p {
+  padding-bottom: 56px;
 }
 
 .advantages-list {
@@ -312,6 +338,10 @@ a .button-menu {
   padding: 0;
 }
 
+.advantages-city-list {
+  background-color: #ffffff;
+}
+
 .item-label {
   width: 400px;
   background-color: #eeeeee;
@@ -322,12 +352,16 @@ a .button-menu {
   text-align: center;
 }
 
-.item-label-blue {
+.item-label-blue,
+.item-label-blue p {
   background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .advantages-city-list {
   display: flex;
+  position: relative;
+  margin: 0;
 }
 
 .advantages-city-list li {
@@ -335,13 +369,16 @@ a .button-menu {
 }
 
 .advantages-city-list .house::before {
-  display: block;
+  position: absolute;
+
   content: url("../img/icon-house.svg");
 }
 
 .advantages-city-list .food::before {
   display: block;
   content: url("../img/icon-food.svg");
+  margin-top: 62px;
+  margin-bottom: 29px;
 }
 
 .advantages-city-list .souvenir::before {
@@ -351,6 +388,7 @@ a .button-menu {
 
 .hotel-searching {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .hotel-searching-form {
@@ -364,6 +402,9 @@ a .button-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  background-color: #ffffff;
+  opacity: 0.9;
 }
 
 .footer-contacts {
@@ -402,6 +443,7 @@ a .button-menu {
 .result-list {
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 .result-item {
