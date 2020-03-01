@@ -71,8 +71,13 @@ img {
   color: #81b3d2;
 }
 
-.main-navigation-menu a:active {
+.main-navigation-menu a:active,
+.main-navigation-menu a:focus, {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation-menu .menu-item-activated {
+  color: #766357;
 }
 
 .intro {
@@ -135,9 +140,40 @@ img {
 
 .button-minus,
 .button-plus {
+  position: relative;
+
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
+}
+
+.button-minus::before {
+  position: absolute;
+  content: "";
+
+  top: 18px;
+  left: 13px;
+
+  width: 12px;
+  height: 3px;
+  background-color: #cacaca;
+}
+
+.button-plus::before,
+.button-plus::after {
+  position: absolute;
+  content: "";
+
+  top: 18px;
+  left: 13px;
+
+  width: 11px;
+  height: 3px;
+  background-color: #cacaca;
+}
+
+.button-plus::after {
+  transform: rotate(90deg);
 }
 
 .button-find {
@@ -289,12 +325,14 @@ img {
 
 .advantages::before {
   position: absolute;
-  top: 514px;
+  top: 515px;
+  content:"";
 
-  content: url("../img/intro-mask.svg");
-
+  width: 1200px;
+  height: 59px;
   padding: 0;
   margin: 0;
+  background-image: url("../img/intro-mask.svg");
 }
 
 .advantages-start-container {
@@ -509,8 +547,14 @@ img {
 
 .footer-copyright {
   margin-left: 228px;
-  vertical-align: middle;  /*почему он не центрируется?*/
+  vertical-align: middle;
   width: 197px;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-copyright a {
@@ -604,12 +648,25 @@ img {
   content: "";
 
   top: 29px;
-  right: 0px;    /*как делать другие звезды, background-repeat?*/
+  right: 0px;
 
-  width: 18px;
-  height: 17px;
   background-image: url("../img/star.svg");
-  /*звезды*/
+  background-repeat: space;
+}
+
+.four-stars .raiting::before {
+  width: 87px;
+  height: 17px;
+}
+
+.three-stars .raiting::before {
+  width: 64px;
+  height: 17px;
+}
+
+.two-stars .raiting::before {
+  width: 41px;
+  height: 17px;
 }
 
 .hotel-type {
@@ -638,32 +695,78 @@ a .button-book {
   position: absolute;
   display: flex;
 
+  align-content: flex-start;
   flex-wrap: wrap;
-  left: 347px;
+  left: 50%;
 
+  margin-left: -284px;
   padding: 55px;
 }
 
 .searching-form-item {
   position: relative;
-  margin: 0;
-  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  width: 458px;
+}
+.form-item-adult,
+.form-item-kids {
+  display: flex;
+  align-items: center;
+}
+
+.form-item-adult label {
+  margin-right: 41px;
+}
+
+.form-item-kids label {
+  margin-right: 27px;
 }
 
 .searching-form-item input {
   margin: 0;
   border: none;
   background-color: #f2f2f2;
+  margin-bottom: 30px;
 }
 
 .long-input {
   width: 346px;
   height: 38px;
+
+  padding-left: 13px;
+}
+
+.searching-form-item input::placeholder {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form-item-adult input,
+.form-item-kids input {
+  text-align: center;
+  margin: 0;
+}
+
+.form-item-adult button,
+.form-item-kids button {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(0, 1, 1, 0.15);
 }
 
 .short-input {
   width: 38px;
   height: 38px;
+  padding: 0;
+}
+
+.searching-form-item button {
+  padding: 0;
 }
 
 .button-calendar {
@@ -675,8 +778,10 @@ a .button-book {
   margin: 0;
 }
 
-.adult-kids-quant {
-  display: flex;
-  justify-content: space-between;
+.button-find {
+  margin-top: 54px;
 }
 
+.container {
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
