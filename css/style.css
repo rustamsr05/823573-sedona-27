@@ -33,10 +33,13 @@ img {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -99,9 +102,15 @@ img {
   text-align: center;
 }
 
-.advantages-start h3,
-.advantages-start p {
+.advantages-start-container {
+  padding: 100px;
+}
+
+.advantages-start-container h3,
+.advantages-start-container p {
   line-height: 26px;
+  padding-left: 350px;
+  padding-right: 350px;
 }
 
 .hotel-searching h2 {
@@ -159,6 +168,15 @@ img {
   background-color: #cacaca;
 }
 
+.button-minus:hover::before,
+.button-minus:focus::before {
+  background-color: #000000;
+}
+
+.button-minus:active::before {
+  background-color: #81b3d2;
+}
+
 .button-plus::before,
 .button-plus::after {
   position: absolute;
@@ -174,6 +192,18 @@ img {
 
 .button-plus::after {
   transform: rotate(90deg);
+}
+
+.button-plus:hover::before,
+.button-plus:focus::before,
+.button-plus:hover::after,
+.button-plus:focus::after {
+  background-color: #000000;
+}
+
+.button-plus:active::before,
+.button-plus:active::after {
+  background-color: #81b3d2;
 }
 
 .button-find {
@@ -394,6 +424,8 @@ img {
 
 .item-label h3 {
   padding-bottom: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .item-label p{
@@ -563,12 +595,12 @@ img {
   height: 41px;
 }
 
-.footer-copyright a:hover path,
-.footer-copyright a:focus path {
+.footer-copyright-link:hover svg,
+.footer-copyright-link:focus svg {
   fill: #81b3d2;
 }
 
-.footer-copyright a:active path {
+.footer-copyright-link:active svg {
   fill: #bdbbbc;
 }
 
@@ -778,6 +810,20 @@ a .button-book {
   margin: 0;
 }
 
+.button-calendar svg {
+  fill: #cacaca;
+}
+
+.button-calendar:hover svg,
+.button-calendar:focus svg {
+  fill: #000000;
+}
+
+.button-calendar:active svg {
+  fill: #81b3d2;
+  outline: none;
+}
+
 .button-find {
   margin-top: 54px;
 }
@@ -785,3 +831,287 @@ a .button-book {
 .container {
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
+
+.searching-filter {
+  background-color: #557595;
+  background-image: url(../img/filter-background.jpg);
+  background-position: 50%;
+  color: #ffffff;
+}
+
+.filter-container {
+  display: flex;
+
+  margin-left: 72px;
+  margin-right: 72px;
+  padding-bottom: 31px;
+}
+
+.filter-container p {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-container label {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.check {
+  padding-left: 40px;
+}
+
+.option {
+  display: block;
+  margin-top: 28px;
+}
+
+.check-input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check-box {
+  display: block;
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+  margin-left: -40px;
+
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.check-input:checked + .check-box {
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.check:hover {
+  cursor: pointer;
+}
+
+.check-input:focus + .check-box {
+  outline: 1px solid #5E9ED6;
+}
+
+.type-filter {
+  margin-left: 115px;
+}
+
+.cost-filter {
+  width: 314px;
+  margin-left: auto;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 52px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -10px;
+
+  width: 20px;
+  height: 20px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  width: 22px;
+  height: 22px;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.button-transparent {
+  display: block;
+  margin: 0 auto;
+
+  font-weight: 400;
+  color: #ffffff;
+
+  width: 135px;
+  height: 34px;
+
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button-transparent:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.result-sort {
+  min-height: 86px;
+  background-color: #ffffff;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+
+  margin-left: 72px;
+  margin-right: 72px;
+  padding-top: 30px;
+}
+
+.radio-input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.sort-quantity label {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort-quantity input {
+  border: none;
+  background: transparent;
+  color: #000000;
+  font-weight: 700;
+}
+
+.sort-type {
+  margin-left: 49px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-direction {
+  display: flex;
+  justify-content: space-between;
+
+  width: 34px;
+  margin-left: auto;
+}
+
+.sort-type label {
+  margin-left: 33px;
+}
+
+.sort-type .sort-choice {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.radio-input:checked + .sort-choice {
+  color: #81b3d2;
+  border: none;
+}
+
+.radio-input:hover + .sort-choice,
+.radio-input:focus + .sort-choice {
+  color: #81b3d2;
+  cursor: pointer;
+}
+
+.radio-input:active + .sort-choice {
+  color: #000000;
+  border: none;
+}
+
+.down-dir:hover + svg,
+.up-dir:hover + svg {
+  fill: #000000;
+  cursor: pointer;
+}
+
+.down-dir:active + svg,
+.up-dir:active + svg {
+  fill: #81b3d2;
+}
+
+.down-dir:checked + svg,
+.up-dir:checked + svg {
+  fill: #81b3d2;
+}
+
+
