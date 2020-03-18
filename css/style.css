@@ -33,11 +33,13 @@ img {
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -46,6 +48,7 @@ img {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
+
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -59,12 +62,12 @@ img {
 
 .button {
   font: inherit;
-
-  text-align: center;
-  vertical-align: middle;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
 
   border: none;
 }
@@ -74,26 +77,27 @@ img {
 
 .main-navigation {
   position: relative;
+  text-align: center;
 
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
   color: #000000;
 }
 
 .main-navigation-menu a {
   margin: 0;
   padding: 0;
+
   color: #000000;
 }
 
-.main-navigation-menu a:hover {
+.main-navigation-menu a:hover,
+.main-navigation-menu a:focus {
   color: #81b3d2;
 }
 
-.main-navigation-menu a:active,
-.main-navigation-menu a:focus {
+.main-navigation-menu a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -103,8 +107,8 @@ img {
 
 .main-header-logo {
   position: absolute;
-
   left: 50%;
+
   margin-left: -70px;
 }
 
@@ -149,27 +153,32 @@ img {
 /* ---------------------------------------- INDEX ---------- */
 
 .intro {
-  background-color: #808080;
-  background-image: url("../img/background-photo.jpg");
   margin: 0;
   padding: 0;
+
+  background-color: #808080;
+  background-image: url("../img/background-photo.jpg");
+  background-position: 0% 30%;
 }
 
 .advantages h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+
   text-align: center;
 }
 
 .advantages p {
   color: #333333;
+
   text-align: center;
 }
 
 .advantages-start-container {
   margin: 0;
   padding: 0;
+
   background-color: #ffffff;
 }
 
@@ -185,6 +194,7 @@ img {
 .advantages-start-container h3,
 .advantages-start-container p {
   line-height: 26px;
+
   padding-left: 350px;
   padding-right: 350px;
 }
@@ -192,14 +202,16 @@ img {
 .hotel-searching h2 {
   font-size: 30px;
   line-height: 36px;
+
   text-align: center;
 }
 
 .hotel-searching p {
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
   color: #333333;
+
+  text-align: center;
 }
 
 .button-search {
@@ -208,6 +220,7 @@ img {
 
   width: 568px;
   height: 86px;
+
   background-color: #766357;
 }
 
@@ -219,11 +232,12 @@ img {
 
 .advantages::before {
   position: absolute;
-  top: 507px;
+  top: 508px;
   content:"";
 
   width: 1200px;
   height: 59px;
+
   background-image: url("../img/intro-mask.svg");
 }
 
@@ -258,18 +272,21 @@ img {
   flex-wrap: wrap;
 
   margin: 0;
+
   background-color: #ffffff;
 }
 
 .item-label {
   width: 400px;
-  background-color: #eeeeee;
   margin: 0;
   padding-top: 47px;
   padding-right: 60px;
   padding-bottom: 60px;
   padding-left: 60px;
+
   text-align: center;
+
+  background-color: #eeeeee;
 }
 
 .item-label-blue {
@@ -279,8 +296,9 @@ img {
 
 .item-label-blue,
 .item-label-blue p {
-  background-color: #81b3d2;
   color: #ffffff;
+
+  background-color: #81b3d2;
 }
 
 .item-label h3 {
@@ -315,11 +333,13 @@ img {
   position: absolute;
   top: 60px;
   left: 162px;
+
   display: block;
   content: "";
 
   width: 75px;
   height: 72px;
+
   background-image: url("../img/icon-house.svg");
 }
 
@@ -327,11 +347,13 @@ img {
   position: absolute;
   top: 62px;
   left: 163px;
+
   display: block;
   content: "";
 
   width: 74px;
   height: 70px;
+
   background-image: url("../img/icon-food.svg");
 }
 
@@ -339,11 +361,13 @@ img {
   position: absolute;
   top: 56px;
   left: 168px;
+
   display: block;
   content: "";
 
   width: 64px;
   height: 76px;
+
   background-image: url("../img/icon-souvenir.svg");
 }
 
@@ -352,14 +376,17 @@ img {
 }
 
 .hotel-searching {
+  position: relative;
+
+  padding-top: 50px;
+
   text-align: center;
   background-color: #ffffff;
-  padding-top: 50px;
 }
 
 .hotel-searching h2 {
-    margin: 0;
-    margin-bottom: 26px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .hotel-searching p {
@@ -398,6 +425,7 @@ img {
   height: 395px;
   margin-left: -284px;
   padding: 55px;
+
   background-color: #ffffff;
 }
 
@@ -415,18 +443,20 @@ img {
 
   width: 38px;
   height: 38px;
+
   background-color: #f2f2f2;
 }
 
 .button-minus::before {
   position: absolute;
-  content: "";
-
   top: 18px;
   left: 13px;
 
+  content: "";
+
   width: 12px;
   height: 3px;
+
   background-color: #cacaca;
 }
 
@@ -442,13 +472,14 @@ img {
 .button-plus::before,
 .button-plus::after {
   position: absolute;
-  content: "";
-
   top: 18px;
   left: 13px;
 
+  content: "";
+
   width: 11px;
   height: 3px;
+
   background-color: #cacaca;
 }
 
@@ -474,6 +505,7 @@ img {
 
   width: 458px;
   height: 58px;
+
   background-color: #81b3d2;
 }
 
@@ -489,6 +521,7 @@ img {
 .form-item-adult,
 .form-item-kids {
   display: flex;
+
   align-items: center;
 }
 
@@ -502,9 +535,10 @@ img {
 
 .searching-form-item input {
   margin: 0;
+  margin-bottom: 30px;
+
   border: none;
   background-color: #f2f2f2;
-  margin-bottom: 30px;
 }
 
 .searching-form-item input:hover {
@@ -513,12 +547,13 @@ img {
 
 .searching-form-item input:focus {
   background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+  outline: none;
 }
 
 .long-input {
   width: 346px;
   height: 38px;
-
   padding-left: 13px;
 }
 
@@ -558,6 +593,8 @@ img {
 
   padding: 0;
   margin: 0;
+
+  background: transparent;
 }
 
 .button-calendar svg {
@@ -578,7 +615,8 @@ img {
   margin-top: 54px;
 }
 
-.button-find:hover {
+.button-find:hover,
+.button-find:focus {
   background-color: #669ec0;
 }
 
@@ -600,6 +638,7 @@ img {
 
   width: 110px;
   height: 27px;
+
   background-color: #81b3d2;
 }
 
@@ -611,20 +650,23 @@ img {
 
   width: 142px;
   height: 27px;
+
   background-color: #766357;
 }
 
-.button-book:hover {
+.button-book:hover,
+.button-book:focus {
   background-color: #604e43;
 }
 
-.button-book:active {
+.button-book:active, {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
 }
 
-.button-more:hover {
+.button-more:hover,
+.button-more:focus {
   background-color: #669ec0;
 }
 
@@ -637,6 +679,7 @@ img {
 .result-hotel a {
   font-size: 21px;
   line-height: 26px;
+
   color: #000000;
 }
 
@@ -654,11 +697,13 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: #666666;
+
   text-align: center;
 
   width: 110px;
   height: 27px;
   margin-top: 93px;
+
   background-color: #f2f2f2;
 }
 
@@ -671,6 +716,7 @@ img {
 .result-list {
   display: flex;
   flex-direction: column;
+
   background-color: #ffffff;
 }
 
@@ -678,6 +724,7 @@ img {
   display: flex;
 
   width: 100%;
+
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
 
@@ -715,11 +762,11 @@ img {
 
 .raiting::before {
   position: absolute;
-  display: block;
-  content: "";
-
   top: 29px;
   right: 0px;
+
+  display: block;
+  content: "";
 
   background-image: url("../img/star.svg");
   background-repeat: space;
@@ -765,11 +812,13 @@ a .button-book {
 
 
 .searching-filter {
+  padding-top: 27px;
+
+  color: #ffffff;
+
   background-color: #557595;
   background-image: url(../img/filter-background.jpg);
   background-position: 50%;
-  color: #ffffff;
-  padding-top: 27px;
 }
 
 .filter-container {
@@ -781,9 +830,10 @@ a .button-book {
 }
 
 .filter-container p {
+  margin: 0;
+
   font-size: 16px;
   line-height: 21px;
-  margin: 0;
 }
 
 .filter-container label {
@@ -797,6 +847,7 @@ a .button-book {
 
 .option {
   display: block;
+
   margin-top: 25px;
 }
 
@@ -811,8 +862,9 @@ a .button-book {
 }
 
 .check-box {
-  display: block;
   position: absolute;
+
+  display: block;
 
   width: 23px;
   height: 23px;
@@ -873,10 +925,11 @@ a .button-book {
 }
 
 .price-controls::after {
-  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
+
+  content: "";
 
   width: 2px;
   height: 22px;
@@ -954,14 +1007,13 @@ a .button-book {
 
 .button-transparent {
   display: block;
-  margin: 0 82px;
 
   font-weight: 400;
   color: #ffffff;
 
   width: 135px;
   height: 35px;
-
+  margin: 0 82px;
 
   background: transparent;
   border: 2px solid #ffffff;
@@ -970,17 +1022,20 @@ a .button-book {
 }
 
 .button-transparent:hover {
-  background-color: #ffffff;
   color: #000000;
+
+  background-color: #ffffff;
 }
 
 .result-sort {
   min-height: 86px;
+
   background-color: #ffffff;
 }
 
 .sort-container {
   display: flex;
+
   align-items: center;
 
   margin-left: 72px;
@@ -1005,10 +1060,11 @@ a .button-book {
 }
 
 .sort-quantity input {
-  border: none;
-  background: transparent;
   color: #000000;
   font-weight: 700;
+
+  border: none;
+  background: transparent;
 }
 
 .sort-type {
@@ -1019,6 +1075,7 @@ a .button-book {
 
 .sort-direction {
   display: flex;
+
   justify-content: space-between;
 
   width: 34px;
@@ -1036,17 +1093,20 @@ a .button-book {
 
 .radio-input:checked + .sort-choice {
   color: #81b3d2;
+
   border: none;
 }
 
 .radio-input:hover + .sort-choice,
 .radio-input:focus + .sort-choice {
   color: #81b3d2;
+
   cursor: pointer;
 }
 
 .radio-input:active + .sort-choice {
   color: #000000;
+
   border: none;
 }
 
@@ -1087,9 +1147,11 @@ a .button-book {
 
 .main-footer .container{
   display: flex;
+
   align-items: center;
 
   min-height: 120px;
+
   background-color: #ffffff;
   opacity: 0.9;
 }
@@ -1115,9 +1177,9 @@ a .button-book {
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
   justify-content: space-between;
 
+  width: 150px;
   margin: 0;
   padding: 0;
 }
@@ -1144,9 +1206,10 @@ a .button-book {
 }
 
 .footer-copyright {
-  margin-left: 228px;
-  vertical-align: middle;
   width: 197px;
+  margin-left: 228px;
+
+  vertical-align: middle;
 }
 
 .footer-copyright {
@@ -1157,6 +1220,7 @@ a .button-book {
 
 .footer-copyright a {
   display: inline-block;
+
   width: 115px;
   height: 41px;
 }
@@ -1174,6 +1238,7 @@ a .button-book {
 .map {
   width: 1200px;
   height: 593px;
+
   background-image: url("../img/map.jpg");
 }
 
