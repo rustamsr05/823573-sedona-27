@@ -38,22 +38,22 @@
 
         <h2 class="visually-hidden">Фильтр поиска</h2>
 
-        <div class="filter-container">
+        <form class="filter-container" method="post" action="https://echo.htmlacademy.ru">
 
           <div class="facilities-filter">
             <p>Инфраструктура:</p>
             <label class="check option">
-              <input class="check-input" type="checkbox" checked>
+              <input class="check-input" type="checkbox" name="pool" checked>
               <span class="check-box"></span>
               Бассейн
             </label>
             <label class="check option">
-              <input class="check-input" type="checkbox">
+              <input class="check-input" type="checkbox" name="parking">
               <span class="check-box"></span>
               Парковка
             </label>
             <label class="check option">
-              <input class="check-input" type="checkbox">
+              <input class="check-input" type="checkbox" name="wifi">
               <span class="check-box"></span>
               Wi-Fi
             </label>
@@ -62,17 +62,17 @@
           <div class="type-filter">
             <p>Тип жилья:</p>
             <label class="check option">
-              <input class="check-input" type="checkbox" checked>
+              <input class="check-input" type="checkbox" name="hotel" checked>
               <span class="check-box"></span>
               Гостиница
             </label>
             <label class="check option">
-              <input class="check-input" type="checkbox" checked>
+              <input class="check-input" type="checkbox" name="motel" checked>
               <span class="check-box"></span>
               Мотель
             </label>
             <label class="check option">
-              <input class="check-input" type="checkbox" checked>
+              <input class="check-input" type="checkbox" name="appart" checked>
               <span class="check-box"></span>
               Апартаменты
             </label>
@@ -100,7 +100,7 @@
             <button class="button button-transparent" type="submit">Показать</button>
           </div>
 
-        </div>
+        </form>
 
       </section>
 

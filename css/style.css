@@ -557,6 +557,10 @@ img {
   padding-left: 13px;
 }
 
+.long-input:focus {
+  padding-left: 11px;
+}
+
 .searching-form-item input::placeholder {
   font-weight: 700;
   text-transform: uppercase;
@@ -659,7 +663,7 @@ img {
   background-color: #604e43;
 }
 
-.button-book:active, {
+.button-book:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
@@ -1239,6 +1243,7 @@ a .button-book {
   width: 1200px;
   height: 593px;
 
+  background-color: #8d9194;
   background-image: url("../img/map.jpg");
 }
 
