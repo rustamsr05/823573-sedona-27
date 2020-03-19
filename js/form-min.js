@@ -1,0 +1,1 @@
+var link=document.querySelector(".button-search"),popup=document.querySelector(".hotel-searching-form");popup.classList.add("form-remove"),link.addEventListener("click",function(e){e.preventDefault(),popup.classList.contains("form-remove")?popup.classList.remove("form-remove"):popup.classList.add("form-remove")});

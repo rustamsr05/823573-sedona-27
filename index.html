@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Sedona</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize-min.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -105,9 +105,11 @@
       </section>
 
       <section class="hotel-searching">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
+        <div class="hotel-searching-bg">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
+        </div>
 
         <form class="hotel-searching-form" method="post" action="https://echo.htmlacademy.ru">
           <p class="searching-form-item">
@@ -145,7 +147,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539545.1443304685!2d-112.04503859845914!3d34.72853946840952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2skz!4v1584470153418!5m2!1sru!2skz" width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539545.1443304685!2d-112.04503859845914!3d34.72853946840952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2skz!4v1584470153418!5m2!1sru!2skz" width="1200" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
 
     </main>
@@ -191,7 +193,7 @@
       </div>
     </footer>
 
-    <script src="js/form.js"></script>
+    <script src="js/form-min.js"></script>
 
   </body>
 </html>
