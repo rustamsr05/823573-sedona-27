@@ -215,11 +215,15 @@ img {
 }
 
 .button-search {
+  display: inline-block;
+
   font-size: 21px;
   line-height: 26px;
 
   width: 568px;
   height: 86px;
+  padding-top: 30px;
+  vertical-align: middle;
 
   background-color: #766357;
 }
@@ -253,6 +257,8 @@ img {
 
 .advantages-item img {
   display: inline-block;
+
+  vertical-align: middle;
 }
 
 .city-image img,
@@ -649,6 +655,7 @@ img {
 
   width: 110px;
   height: 27px;
+  vertical-align: middle;
 
   background-color: #81b3d2;
 }
@@ -661,6 +668,7 @@ img {
 
   width: 142px;
   height: 27px;
+  vertical-align: middle;
 
   background-color: #766357;
 }
@@ -710,6 +718,7 @@ img {
   color: #666666;
 
   text-align: center;
+  vertical-align: middle;
 
   width: 110px;
   height: 27px;
@@ -783,6 +792,11 @@ img {
   background-repeat: space;
 }
 
+.five-stars .raiting::before {
+  width: 107px;
+  height: 17px;
+}
+
 .four-stars .raiting::before {
   width: 87px;
   height: 17px;
@@ -795,6 +809,11 @@ img {
 
 .two-stars .raiting::before {
   width: 41px;
+  height: 17px;
+}
+
+.one-star .raiting::before {
+  width: 18px;
   height: 17px;
 }
 
@@ -1108,8 +1127,12 @@ a .button-book {
   border: none;
 }
 
-.radio-input:hover + .sort-choice,
-.radio-input:focus + .sort-choice {
+.radio-input:checked:focus + .sort-choice {
+
+  outline: 1px solid #5e9ed6;
+}
+
+.radio-input:hover + .sort-choice {
   color: #81b3d2;
 
   cursor: pointer;
@@ -1137,7 +1160,10 @@ a .button-book {
   fill: #81b3d2;
 }
 
-
+.down-dir:checked:focus + svg,
+.up-dir:checked:focus + svg {
+  outline: 1px solid #5e9ed6;
+}
 
 /* ---------------------------------------- FOOTER ---------- */
 
@@ -1188,6 +1214,7 @@ a .button-book {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+
   justify-content: space-between;
 
   width: 150px;
@@ -1202,6 +1229,7 @@ a .button-book {
 
   width: 46px;
   height: 48px;
+  margin-bottom: 6px;
 
   background-color: #81b3d2;
 }
@@ -1234,6 +1262,7 @@ a .button-book {
 
   width: 115px;
   height: 41px;
+  vertical-align: middle;
 }
 
 .footer-copyright-link:hover svg,
